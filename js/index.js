@@ -1,13 +1,13 @@
-const searchBox = document.getElementById("searchByLineNumber");
-const searchBtn = document.getElementById("submitSearchByLineNumber");
-const resultLineNum = document.getElementById("lineInfoNum");
-const resultLineText = document.getElementById("lineInfoText");
+const searchBox = document.getElementById("searchByLineNumber"); // text input field for inputting a line number an user wants to search
+const searchBtn = document.getElementById("submitSearchByLineNumber"); // button for searching lines by bumber
+const resultLineNum = document.getElementById("lineInfoNum"); // paragraph element for showing the line number
+const resultLineText = document.getElementById("lineInfoText"); // paragraph element for showing the line route as a text
 
+const url = "https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql"; // API address
+
+// Function which will be ran when the button "submitSearchByLineNumber" is clicked
 function searchByLineNumber() {
     let query = searchBox.value;
-    console.log(query);
-
-    const url = "https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql";
 
     fetch(url,{
         method: "POST",
