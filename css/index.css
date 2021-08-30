@@ -1,0 +1,19 @@
+body {
+    margin:0;
+    background-color: #d9e8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    font-weight: normal;
+}
+
+main {
+    margin:25px;
+    border:2px solid #5e7dff;
+    border-radius: 15px;
+}
+
+section {
+    padding:20px;
+}
