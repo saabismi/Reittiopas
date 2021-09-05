@@ -17,3 +17,57 @@ main {
 section {
     padding:20px;
 }
+
+/* Route displaying container and their children*/
+
+#routeContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.routeLeg {
+    padding:15px;
+    border-bottom: 8px solid #000;
+}
+
+.routeStartLeg {
+    border-bottom-left-radius: 15px;
+}
+
+.routeMiddleLeg {
+    
+}
+
+.routeEndLeg {
+    border-bottom-right-radius: 15px;
+}
+
+/* Route leg types get different color indicators */
+
+.walk {
+    border-color: #515151;
+}
+
+.bike {
+    border-color: #1d13c8;
+}
+
+.metro {
+    border-color: #de731b;
+}
+
+.tram {
+    border-color: #43d169;
+}
+
+.bus {
+    border-color: #5e7dff;
+}
+
+.train {
+    border-color: #9949b8;
+}
+
+.ferry {
+    border-color: #38d5f5;
+}

@@ -17,6 +17,7 @@
         </section>
 
         <section id="searchbox">
+            <h2>Linjahaku</h2>
             <input id="searchByLineNumber" type="text" placeholder="Hae linjaa numerolla">
             <button id="submitSearchByLineNumber" onclick="searchByLineNumber()">Hae</button>
         </section>
@@ -24,6 +25,27 @@
         <section id="searchresult">
             <p id="lineInfoNum"></p>
             <p id="lineInfoText"></p>
+        </section>
+
+        <section id="routePlanBox">
+            <h2>Reittihaku</h2>
+            <p>Syötä aloitus- ja lopetuspaikat (voit myös hakea):</p>
+            <input id="searchForStart" type="text" placeholder="Hae aloituspaikkaa">
+            <input id="searchForEnd" type="text" placeholder="Hae lopetuspaikkaa">
+            <button id="searchRoute" onclick="searchRoute()">Hae reittiä</button>
+        </section>
+
+        <section id="showRoute">
+            <div id="routeContainer">
+                <div class="routeLeg routeStartLeg bike"><span class="legInfo">Pyöräily, 5 min</div>
+                <div class="routeLeg routeMiddleLeg bus"><span class="legInfo">Bussi 106, 10 min</span></div>
+                <div class="routeLeg routeMiddleLeg metro"><span class="legInfo">Metro M1, 32 min</span></div>
+                <div class="routeLeg routeMiddleLeg tram"><span class="legInfo">Raitiovaunu 3T, 18 min</span></div>
+                <div class="routeLeg routeMiddleLeg walk"><span class="legInfo">Kävely, 2 min</span></div>
+                <div class="routeLeg routeMiddleLeg train"><span class="legInfo">Juna A, 9 min</span></div>
+                <div class="routeLeg routeMiddleLeg ferry"><span class="legInfo">Lautta, 28 min</span></div>
+                <div class="routeLeg routeEndLeg walk"><span class="legInfo">Kävely, 5 min</span></div>
+            </div>
         </section>
 
     </main>
